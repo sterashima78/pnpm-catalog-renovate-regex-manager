@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:js-lib",
+        ":timezone(Asia/Tokyo)"
+    ],
+    "dependencyDashboard": true,
+    "customManagers": [
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "^pnpm-workspace\\.yaml$"
+            ],
+            "matchStrings": [
+                "\\s*(?<depName>[\\w-]+):\\s*(?<currentValue>[\\d\\.]+)"
+            ],
+            "depNameTemplate": "{{depName}}",
+            "datasourceTemplate": "npm",
+            "versioningTemplate": "npm"
+        }
+    ]
+}

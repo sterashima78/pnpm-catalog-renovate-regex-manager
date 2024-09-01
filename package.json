@@ -1,0 +1,12 @@
+{
+  "name": "pnpm-catalog-renovate-regex-manager",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.9.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "turbo": "catalog:"
+  }
+}
